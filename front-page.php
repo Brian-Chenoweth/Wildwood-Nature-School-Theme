@@ -13,11 +13,24 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-        <header>
-            <h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-        </header>
 
-        <?php echo do_shortcode("[my_content id='8']"); ?>
+
+        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
+        <?php ## echo do_shortcode("[my_content id='8']"); ?>
+
+        <?php
+            if( have_posts() ) {
+                while( have_posts() ) {
+                the_post();
+                  the_content();
+                }
+              }
+        ?>
+
+        <h2>Recent Posts</h2>
+        <?php echo do_shortcode("[get_recent_posts id='homepage-posts']"); ?>
+
 
         
 		</main><!-- #main -->
@@ -26,3 +39,4 @@ get_header();
 <?php
 get_sidebar();
 get_footer();
+?>

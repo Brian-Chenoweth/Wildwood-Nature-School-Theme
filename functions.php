@@ -7,6 +7,7 @@
  * @package wildwoodnature
  */
 
+
 if ( ! function_exists( 'wildwoodnature_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -164,7 +165,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 function get_post_page_content( $atts ) {
 	extract( shortcode_atts( array(
 		'id' => null,
-		'title' => false,
+		'title' => false,  
 	), $atts ) );
 
 	$the_query = new WP_Query( 'page_id='.$id );
@@ -180,8 +181,42 @@ function get_post_page_content( $atts ) {
 }
 add_shortcode( 'my_content', 'get_post_page_content' );
 
-/* CHANGE RELATED BLOG POSTS ELLIPSIS */
-function new_excerpt_more( $more ) {
-	return '…';
+
+
+function get_recent_posts($atts) {
+	$args = array( 'numberposts' => '3' );
+	$recent_posts = wp_get_recent_posts( $args );
+	$thumb_id = get_post_thumbnail_id();
+	$feat_image_url = wp_get_attachment_url( get_post_thumbnail_id() );
+
+	extract( shortcode_atts( array(
+		'class' => null,
+		'id' => null,
+		'numberposts' => '3',
+	), $atts ) );
+
+	$i = 0;
+	$counter = 0;
+
+	if($counter = 3) {
+		echo '<div id="'.$id.'">';
+			foreach( $recent_posts as $recent ){
+				$i++;
+				echo '<ul class="post-'.$i.'">
+						<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a></li> 
+						<li><a href="' . get_permalink($recent["ID"]) . '">' .'Read More'.'</a></li>
+						<li> '.get_the_excerpt($recent["ID"]).'</li>
+						<li> '. wp_get_attachment_url( get_post_thumbnail_id($recent["ID"]) ) .'</li>
+						<li> <img src="'. wp_get_attachment_url( get_post_thumbnail_id($recent["ID"]) ) .'"></li>
+					</ul>';
+				$counter++;
+			}
+		echo '</div>';
+	}
+
+	wp_reset_query();
+
 }
-add_filter('excerpt_more', 'new_excerpt_more');
+
+add_shortcode( 'get_recent_posts', 'get_recent_posts' );
+

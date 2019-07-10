@@ -28,7 +28,7 @@ get_header();
               }
         ?>
 
-        <h2>Recent Posts</h2>
+        
         <?php echo do_shortcode("[get_recent_posts id='homepage-posts']"); ?>
 
 

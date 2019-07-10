@@ -1,19 +1,38 @@
 a {
-	color: $color__link;
+    color: $color__link;
+    font-family: 'Poppins', sans-serif;
 
-	&:visited {
-		color: $color__link-visited;
-	}
-	&:hover,
-	&:focus,
-	&:active {
-		color: $color__link-hover;
-	}
-	&:focus {
-		outline: thin dotted;
-	}
-	&:hover,
-	&:active {
-		outline: 0;
-	}
+    &:visited {
+        color: $color__link-visited;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color__link-hover;
+        // color: lighten($green, 10%);
+    }
+
+    &:focus {
+        outline: thin dotted;
+    }
+
+    &:hover,
+    &:active {
+        outline: 0;
+    }
+}
+
+a.btn {
+    color: $white;
+    background-color: $green;
+    border-radius: 0;
+    padding: rem-calc(10 40);
+    margin: 0 auto;
+
+    &:hover {
+        transition: all .3s;
+        background-color: lighten($green, 10%);
+        color: $white;
+    }
 }

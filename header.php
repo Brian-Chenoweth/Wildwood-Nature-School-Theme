@@ -18,9 +18,12 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
+	
+<link rel="stylesheet" href="/wp-content/themes/wildwoodnature/bootstrap/css/bootstrap.min.css" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
-<body <?php body_class(); ?>>
+<body class="container" <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wildwoodnature' ); ?></a>
 

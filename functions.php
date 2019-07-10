@@ -160,6 +160,16 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function custom_excerpt_length( $length ) {
+        return 20;
+    }
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function new_excerpt_more($more) {
+    return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
 
 /* ADDS CONTENT FROM PAGES TO WHATEVER PAGE THE SHORTCODE IS ADDED TO */
 function get_post_page_content( $atts ) {
@@ -199,18 +209,20 @@ function get_recent_posts($atts) {
 	$counter = 0;
 
 	if($counter = 3) {
+		echo '<h2 id="latest-posts">Latest Blog Posts</h2>';
 		echo '<div id="'.$id.'">';
 			foreach( $recent_posts as $recent ){
 				$i++;
 				echo '<ul class="post-'.$i.'">
+				<li><img src="'. wp_get_attachment_url( get_post_thumbnail_id($recent["ID"]) ) .'"></li>
+						<li>'.get_the_date( 'd M, Y' ).'</li>
 						<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a></li> 
-						<li><a href="' . get_permalink($recent["ID"]) . '">' .'Read More'.'</a></li>
 						<li> '.get_the_excerpt($recent["ID"]).'</li>
-						<li> '. wp_get_attachment_url( get_post_thumbnail_id($recent["ID"]) ) .'</li>
-						<li> <img src="'. wp_get_attachment_url( get_post_thumbnail_id($recent["ID"]) ) .'"></li>
+						<li>By: '.get_the_author_meta('display_name', $author_id).'</li>
 					</ul>';
 				$counter++;
 			}
+			echo'<a class="btn" href="/blog/">' .'Read More'.'</a>';
 		echo '</div>';
 	}
 
@@ -219,4 +231,3 @@ function get_recent_posts($atts) {
 }
 
 add_shortcode( 'get_recent_posts', 'get_recent_posts' );
-

@@ -1,0 +1,47 @@
+h2#latest-posts {
+    text-align: center;
+    color: $green;
+}
+
+#homepage-posts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: rem-calc(480);
+    margin: rem-calc(50 0);
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        width: 32%;
+        margin: rem-calc(0 0 50 0);
+        padding: 0;
+
+        li {
+            list-style-type: none;
+
+            a {
+                font-size: rem-calc(22);
+            }
+
+            &:first-of-type {
+                display: flex;
+                max-height: rem-calc(250);
+
+                img {
+                    width: 100%;
+                }
+
+            }
+
+            &:nth-child(4) {
+                line-height: rem-calc(25);
+            }
+
+        }
+
+    }
+
+}

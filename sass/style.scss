@@ -44,6 +44,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 @import "variables-site/variables-site";
 @import "mixins/mixins-master";
+@import "functions/functions";
 
 /*--------------------------------------------------------------
 # Normalize
@@ -69,6 +70,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Navigation
 --------------------------------------------------------------*/
 @import "navigation/navigation";
+
+/*--------------------------------------------------------------
+# Shortcodes
+--------------------------------------------------------------*/
+@import "shortcodes/shortcodes";
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -104,3 +110,4 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+

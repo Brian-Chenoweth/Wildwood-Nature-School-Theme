@@ -231,3 +231,14 @@ function get_recent_posts($atts) {
 }
 
 add_shortcode( 'get_recent_posts', 'get_recent_posts' );
+
+
+function full_width_shortcode($atts = [], $content = null)
+{
+    // do something to $content
+ 
+	echo'<div class="full-width">' . $content . '</div>';
+    // always return
+    // return $content;
+}
+add_shortcode('full-width', 'full_width_shortcode');

@@ -19,6 +19,8 @@ get_header();
 
         <?php ## echo do_shortcode("[my_content id='8']"); ?>
 
+
+
         <?php
             if( have_posts() ) {
                 while( have_posts() ) {
@@ -27,6 +29,16 @@ get_header();
                 }
               }
         ?>
+
+        <?php echo do_shortcode(
+            "[full-width]
+                <div id='contact-us'>
+                    <h2>Contact us to schedule a tour now!</h2>
+                    <span class='glyphicon glyphicon-calendar' aria-hidden='true'></span>
+                    <a class='btn secondary'>Contact</a>
+                </div>    
+            [/full-width]"
+        ); ?>
 
         
         <?php echo do_shortcode("[get_recent_posts id='homepage-posts']"); ?>

@@ -6,6 +6,10 @@ h1 {
 h2 {
     font-size: rem-calc(30);
     margin: rem-calc(20 0);
+
+    // @include for-tablet-portrait-up {
+    //     font-size: rem-calc(25);
+    // }
 }
 
 h1,

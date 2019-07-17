@@ -27,12 +27,32 @@ a.btn {
     color: $white;
     background-color: $green;
     border-radius: 0;
-    padding: rem-calc(10 40);
-    margin: 0 auto;
+    padding: rem-calc(15 35);
+    // margin: 0 auto;
 
-    &:hover {
+    &.secondary {
+        color: $green;
+        background-color: $white;
+
+        &:hover,
+        &:focus,
+        &:active {
+            transition: all .3s;
+            background-color: $green;
+			color: $white;
+			border: 1px solid $white;
+        }
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
         transition: all .3s;
         background-color: lighten($green, 10%);
         color: $white;
+    }
+
+    @include phone {
+        width: 100%;
     }
 }

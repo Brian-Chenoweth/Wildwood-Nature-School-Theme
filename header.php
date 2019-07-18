@@ -21,6 +21,10 @@
 	
 <link rel="stylesheet" href="/wp-content/themes/wildwoodnature/bootstrap/css/bootstrap.min.css" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+<?php require_once( ( get_template_directory() ). '/inc/schema.php' ); ?>
+
+
 </head>
 
 <body class="container" <?php body_class(); ?>>

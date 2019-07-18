@@ -13,21 +13,47 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<!-- <div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'wildwoodnature' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'wildwoodnature' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'wildwoodnature' ), 'wildwoodnature', '<a href="http://www.brianmchenoweth.com">Brian Chenoweth</a>' );
-				?>
-		</div> -->
-		<!-- .site-info -->
+	<div class="full-width">
+
+	<img src="https://via.placeholder.com/1170x350.png?text=Contact+Form" alt="">
+
+	</div>
+
+	<footer class="site-footer">
+
+		<div class="info-wrap">
+
+			<div class="site-info">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wildwood.png" alt="Wildwood Nature School" />
+
+				<p class="theme-author">wildwoodnature, a custom theme by <a href="http://www.brianmchenoweth.com" class="author">Brian M Chenoweth</a></p>
+
+				<p class="copyright">&copy; Copyright <?php echo date("Y"); ?> <strong>Wildwood Nature School</strong>, All Rights Reserved</p>
+
+			</div> <!-- .site-info -->
+
+			<div class="nap-info">
+
+				<p>
+					Wildwood Nature School<br/>
+					Portland, OR 97231<br/>
+					Phone: <a href="tel:406-656-6916">406 656 6916</a><br/>
+					Email: <a href="mailto:nfravel@wildwoodnatureschool.com">nfravel@wildwoodnatureschool.com</a><br/>
+				</p>
+
+				<nav class="secondary-navigation">
+					<?php
+						wp_nav_menu( array(
+							'menu'        => 'secondary',
+						) );
+					?>
+				</nav><!-- #site-navigation -->
+
+			</div>
+
+
+		</div> <!-- .info-wrap -->
+
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

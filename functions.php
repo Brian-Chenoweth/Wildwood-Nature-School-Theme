@@ -214,7 +214,7 @@ function get_recent_posts($atts) {
 			foreach( $recent_posts as $recent ){
 				$i++;
 				echo '<ul class="post-'.$i.'">
-				<li><img src="'. wp_get_attachment_url( get_post_thumbnail_id($recent["ID"]) ) .'"></li>
+				<li><a href="' . get_permalink($recent["ID"]) . '"><img src="'. wp_get_attachment_url( get_post_thumbnail_id($recent["ID"]) ) .'"></a></li>
 						<li>'.get_the_date( 'd M, Y' ).'</li>
 						<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a></li> 
 						<li> '.get_the_excerpt($recent["ID"]).'</li>
@@ -233,12 +233,53 @@ function get_recent_posts($atts) {
 add_shortcode( 'get_recent_posts', 'get_recent_posts' );
 
 
-function full_width_shortcode($atts = [], $content = null)
-{
-    // do something to $content
- 
+function full_width_shortcode($atts = [], $content = null) {
 	echo'<div class="full-width">' . $content . '</div>';
-    // always return
-    // return $content;
 }
+
 add_shortcode('full-width', 'full_width_shortcode');
+
+
+
+
+function register_secondary_menu() {
+  register_nav_menu('secondary-menu',__( 'Secondary Menu' ));
+}
+add_action( 'init', 'register_secondary_menu' );
+
+
+
+
+
+
+
+function display_homepage_programs() {
+	include get_template_directory() . '/shortcodes/homepage-programs.php';
+}
+
+add_shortcode('homepage-programs', 'display_homepage_programs');
+
+
+
+
+
+
+
+function display_homepage_banner() {
+	include get_template_directory() . '/shortcodes/homepage-banner.php';
+}
+
+add_shortcode('homepage-banner', 'display_homepage_banner');
+
+
+
+
+
+
+
+function display_full_width_contact() {
+	include get_template_directory() . '/shortcodes/full-width-contact.php';
+}
+
+add_shortcode('full-width-contact', 'display_full_width_contact');
+

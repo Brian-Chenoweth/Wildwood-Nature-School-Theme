@@ -1,13 +1,14 @@
 h2#latest-posts {
     text-align: center;
     color: $green;
+    margin-top: rem-calc(50);
 }
 
 #homepage-posts {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: rem-calc(480);
+    // height: rem-calc(480);
     margin: rem-calc(50 0);
 
     @include phone {
@@ -23,6 +24,7 @@ h2#latest-posts {
         width: 32%;
         margin: rem-calc(0 0 50 0);
         padding: 0;
+        height: rem-calc(480);
 
         @include phone {
             width: 100%;
@@ -46,9 +48,30 @@ h2#latest-posts {
                 display: flex;
                 max-height: rem-calc(250);
 
+                a {
+                    display: flex;
+                }
+
+                @include tablet {
+                    max-height: none;
+                    display: block;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                }
+
                 @include phone {
                     max-height: none;
                     display: block;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+
                 }
 
             }

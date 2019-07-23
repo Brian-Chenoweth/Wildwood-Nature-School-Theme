@@ -13,16 +13,33 @@
             color: white;
             max-width: 63%;
             margin: 2.5rem 0;
-            letter-spacing: 1px;
+            letter-spacing: rem-calc(1);
         }
 
         p {
             color: white;
             font-weight: 100;
             max-width: 45%;
-            line-height: 30px;
+            line-height: rem-calc(30);
             margin: 2.5rem 0;
         }
 
     }
+
+    @include phone {
+        height: auto;
+
+
+        #homepage-banner {
+            padding: 4rem 15px;
+            h1, p {
+                max-width: 100%;
+            }
+            h1 {
+                font-size: rem-calc(30);
+                margin-top: 0;
+            }
+        }
+    }
+
 }

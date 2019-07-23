@@ -657,34 +657,34 @@ a:hover, a:active {
 	outline: 0;
 }
 
-a.btn {
+a.btn, .btn {
 	color: #fff;
 	background-color: #0B8B6D;
 	border-radius: 0;
 	padding: 1.5rem 3.5rem;
 }
 
-a.btn.secondary {
+a.btn.secondary, .btn.secondary {
 	color: #0B8B6D;
 	background-color: #fff;
 	transition: all .5s;
 }
 
-a.btn.secondary:hover, a.btn.secondary:focus, a.btn.secondary:active {
+a.btn.secondary:hover, a.btn.secondary:focus, a.btn.secondary:active, .btn.secondary:hover, .btn.secondary:focus, .btn.secondary:active {
 	transition: all .5s;
 	background-color: #0B8B6D;
 	color: #fff;
 	border: 1px solid #fff;
 }
 
-a.btn:hover, a.btn:focus, a.btn:active {
+a.btn:hover, a.btn:focus, a.btn:active, .btn:hover, .btn:focus, .btn:active {
 	transition: all .3s;
 	background-color: #0fba92;
 	color: #fff;
 }
 
 @media (max-width: 767px) {
-	a.btn {
+	a.btn, .btn {
 		width: 100%;
 		font-size: 2rem;
 	}
@@ -792,6 +792,12 @@ h2#latest-posts {
 	text-align: center;
 	color: #0B8B6D;
 	margin-top: 5rem;
+}
+
+@media (max-width: 767px) {
+	h2#latest-posts {
+		margin: 4rem 0;
+	}
 }
 
 #homepage-posts {
@@ -930,6 +936,7 @@ div.full-width h2 {
 @media (max-width: 767px) {
 	div.full-width h2 {
 		text-align: center;
+		margin-top: 0;
 	}
 }
 
@@ -949,10 +956,23 @@ div.full-width span.glyphicon {
 	text-align: center;
 }
 
+@media (max-width: 767px) {
+	#homepage-programs-wrap {
+		margin: 4rem 0;
+	}
+}
+
 #homepage-programs-wrap h2 {
 	text-align: center;
 	color: #0B8B6D;
 	margin: 5rem 0;
+}
+
+@media (max-width: 767px) {
+	#homepage-programs-wrap h2 {
+		margin-top: 0;
+		margin-bottom: 4rem;
+	}
 }
 
 #homepage-programs-wrap #homepage-programs {
@@ -1024,15 +1044,130 @@ div.full-width span.glyphicon {
 	color: white;
 	max-width: 63%;
 	margin: 2.5rem 0;
-	letter-spacing: 1px;
+	letter-spacing: 0.1rem;
 }
 
 #homepage-banner-wrap #homepage-banner p {
 	color: white;
 	font-weight: 100;
 	max-width: 45%;
-	line-height: 30px;
+	line-height: 3rem;
 	margin: 2.5rem 0;
+}
+
+@media (max-width: 767px) {
+	#homepage-banner-wrap {
+		height: auto;
+	}
+	#homepage-banner-wrap #homepage-banner {
+		padding: 4rem 15px;
+	}
+	#homepage-banner-wrap #homepage-banner h1, #homepage-banner-wrap #homepage-banner p {
+		max-width: 100%;
+	}
+	#homepage-banner-wrap #homepage-banner h1 {
+		font-size: 3rem;
+		margin-top: 0;
+	}
+}
+
+.full-width.contact-us-wrap {
+	background: linear-gradient(rgba(67, 67, 67, 0.67), rgba(67, 67, 67, 0.67)), url("/wp-content/themes/wildwoodnature/img/leaves-bg.jpg");
+	background-size: cover;
+	background-position: center top;
+	min-height: 50rem;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	-ms-flex-align: center;
+	    align-items: center;
+	padding: 75px 25px;
+}
+
+@media (max-width: 767px) {
+	.full-width.contact-us-wrap {
+		padding: 25px 15px;
+		min-height: 0;
+	}
+}
+
+.full-width.contact-us-wrap .contact-us {
+	width: 117rem;
+	padding: 2.5rem;
+	background-color: rgba(255, 255, 255, 0.67);
+	border: 1px solid rgba(112, 112, 112, 0.67);
+}
+
+.full-width.contact-us-wrap .contact-us h2 {
+	margin: 0 0 1.5rem;
+	color: #0B8B6D;
+	text-align: center;
+}
+
+.full-width.contact-us-wrap .contact-us form {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+}
+
+.full-width.contact-us-wrap .contact-us form input,
+.full-width.contact-us-wrap .contact-us form textarea {
+	margin: .5em 0;
+}
+
+@media (max-width: 767px) {
+	.full-width.contact-us-wrap .contact-us form input,
+	.full-width.contact-us-wrap .contact-us form textarea {
+		margin: .25em 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.full-width.contact-us-wrap .contact-us form input:not([type="submit"]) {
+		height: 35px;
+	}
+}
+
+.full-width.contact-us-wrap .contact-us form input:not([type="submit"]),
+.full-width.contact-us-wrap .contact-us form textarea {
+	padding: 10px;
+	background-color: #EDEDED;
+}
+
+.full-width.contact-us-wrap .contact-us form input:not([type="submit"]):-ms-input-placeholder,
+.full-width.contact-us-wrap .contact-us form textarea:-ms-input-placeholder {
+	color: #9B9B9B;
+	font-style: italic;
+	font-size: 1.2rem;
+}
+
+.full-width.contact-us-wrap .contact-us form input:not([type="submit"])::placeholder,
+.full-width.contact-us-wrap .contact-us form textarea::placeholder {
+	color: #9B9B9B;
+	font-style: italic;
+	font-size: 1.2rem;
+}
+
+.full-width.contact-us-wrap .contact-us form input[type="submit"] {
+	color: white;
+	font-size: 1.6rem;
+}
+
+.full-width.contact-us-wrap .contact-us form input {
+	height: 45px;
+}
+
+.full-width.contact-us-wrap .contact-us form textarea {
+	height: 100px;
+	resize: none;
+}
+
+@media (max-width: 767px) {
+	.full-width.contact-us-wrap .contact-us form textarea {
+		height: 65px;
+	}
 }
 
 /*--------------------------------------------------------------

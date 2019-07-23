@@ -2,13 +2,16 @@ h2#latest-posts {
     text-align: center;
     color: $green;
     margin-top: rem-calc(50);
+
+    @include phone {
+        margin: 4rem 0;
+    }
 }
 
 #homepage-posts {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    // height: rem-calc(480);
     margin: rem-calc(50 0);
 
     @include phone {

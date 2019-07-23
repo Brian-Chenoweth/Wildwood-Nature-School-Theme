@@ -2,10 +2,19 @@
     margin: 6rem 0;
     text-align: center;
 
+    @include phone {
+        margin: 4rem 0;
+    }
+
     h2 {
         text-align: center;
         color: #0B8B6D;
         margin: 5rem 0;
+
+        @include phone {
+            margin-top: 0;
+            margin-bottom: 4rem;
+        }
     }
 
     #homepage-programs {
@@ -14,7 +23,10 @@
 
         .program {
 
-            &-1,&-2,&-3,&-4 {
+            &-1,
+            &-2,
+            &-3,
+            &-4 {
                 flex: 0 0 23.5%;
                 text-align: center;
                 display: flex;
@@ -36,12 +48,14 @@
 
         @include phone {
             flex-direction: column;
-            // img {
-            //     width: 100%;
-            // }
             .program {
-                &-1,&-2,&-3,&-4 {
+
+                &-1,
+                &-2,
+                &-3,
+                &-4 {
                     margin: 0 0 3rem 0;
+
                     img {
                         width: 100%;
                     }
@@ -53,6 +67,7 @@
 
     a.btn {
         margin-top: 5rem;
+
         @include phone {
             margin-top: 0;
         }

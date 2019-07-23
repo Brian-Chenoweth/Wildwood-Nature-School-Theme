@@ -13,11 +13,11 @@
 
 	</div><!-- #content -->
 
-	<div class="full-width">
-
-	<img src="https://via.placeholder.com/1170x350.png?text=Contact+Form" alt="">
-
+<div class="full-width contact-us-wrap">
+	<div class="contact-us">
+		<?php include get_template_directory() . '/contact/contact.php'; ?>
 	</div>
+</div>
 
 	<footer class="site-footer">
 
@@ -26,7 +26,7 @@
 			<div class="site-info">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wildwood.png" alt="Wildwood Nature School" />
 
-				<p class="theme-author">wildwoodnature, a custom theme by <a href="http://www.brianmchenoweth.com" class="author">Brian M Chenoweth</a></p>
+				<p class="theme-author">wildwoodnature, a custom theme by <a href="mailto:contact@brianmchenoweth.com" class="author">Brian M Chenoweth</a></p>
 
 				<p class="copyright">&copy; Copyright <?php echo date("Y"); ?> <strong>Wildwood Nature School</strong>, All Rights Reserved</p>
 

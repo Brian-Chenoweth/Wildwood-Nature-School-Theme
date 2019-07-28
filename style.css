@@ -874,6 +874,12 @@ h2#latest-posts {
 	display: flex;
 }
 
+@media (max-width: 767px) {
+	#homepage-posts ul li:first-of-type a {
+		display: block;
+	}
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
 	#homepage-posts ul li:first-of-type {
 		max-height: none;
@@ -1394,9 +1400,6 @@ header .site-branding nav.main-navigation ul#primary-menu ul.sub-menu li:not(.cu
 	header .site-branding .menu-menu-1-container {
 		position: relative;
 		z-index: 9;
-	}
-	header .site-branding nav.main-navigation .menu-open ul#primary-menu {
-		display: block;
 	}
 	header .site-branding nav.main-navigation ul#primary-menu {
 		display: none;

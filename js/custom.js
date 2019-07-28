@@ -128,15 +128,6 @@ var $ = jQuery.noConflict();
     
     $("button.menu-toggle").click(function () {
         $("button.menu-toggle").toggleClass("is-active");
-
-        // if ($(".menu-menu-1-container").hasClass("menu-open")) {
-        //     $(".glyphicon.menu-burger-menu").removeClass("glyphicon-menu-hamburger");
-        //     $(".glyphicon.menu-burger-menu").addClass("glyphicon-remove");
-        // }
-        // else {
-        //      $(".glyphicon.menu-burger-menu").addClass("glyphicon-menu-hamburger",);
-        // }
-
         
 
     });
@@ -154,6 +145,9 @@ var $ = jQuery.noConflict();
             backgroundColor: "black",
             display: "block"
         }, 100);
+        $("ul#primary-menu").css("display", "flex");
+        $("ul#primary-menu").css("flex-direction", "column");
+        $("ul#primary-menu").css("padding", "1em 2em");
 
 
 

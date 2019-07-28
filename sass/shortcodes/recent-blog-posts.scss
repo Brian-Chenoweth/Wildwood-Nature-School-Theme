@@ -53,6 +53,9 @@ h2#latest-posts {
 
                 a {
                     display: flex;
+                    @include phone {
+                        display: block;
+                    }
                 }
 
                 @include tablet {

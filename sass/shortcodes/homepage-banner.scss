@@ -32,14 +32,21 @@
 
         #homepage-banner {
             padding: 4rem 15px;
-            h1, p {
+
+            h1,
+            p {
                 max-width: 100%;
             }
+
             h1 {
-                font-size: rem-calc(30);
+                font-size: rem-calc(26);
                 margin-top: 0;
             }
         }
     }
 
+}
+
+body.container {
+    margin-top: 40px;
 }

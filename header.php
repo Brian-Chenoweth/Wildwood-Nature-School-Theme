@@ -34,11 +34,18 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 
-
-		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wildwood.png" alt="Wildwood Nature School" />
-
+		<a href="/" id="logo-home">
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wildwood.png" alt="Wildwood Nature School" />
+		</a>
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'wildwoodnature' ); ?></button>
+		<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="menu-burger-menu glyphicon glyphicon-menu-hamburger"></span></button> -->
+		
+		
+		<button class="mobile-only hamburger hamburger--collapse menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false">
+			<span class="hamburger-box menu-burger-menu">
+				<span class="hamburger-inner"></span>
+			</span>
+			</button>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
@@ -47,7 +54,7 @@
 			?>
 		</nav><!-- #site-navigation -->
 
-		
+
 		</div><!-- .site-branding -->
 
 	</header><!-- #masthead -->

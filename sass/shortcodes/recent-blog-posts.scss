@@ -51,8 +51,18 @@ h2#latest-posts {
                 display: flex;
                 max-height: rem-calc(250);
 
+                // @include desktop {
+                //     height: rem-calc(250);
+                // }
+
+                @media (min-width: 1200px) {
+                    flex: 2;
+                }
+
+
                 a {
                     display: flex;
+
                     @include phone {
                         display: block;
                     }

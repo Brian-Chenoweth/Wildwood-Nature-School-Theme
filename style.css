@@ -869,6 +869,13 @@ h2#latest-posts {
 	max-height: 25rem;
 }
 
+@media (min-width: 1200px) {
+	#homepage-posts ul li:first-of-type {
+		-ms-flex: 2;
+		    flex: 2;
+	}
+}
+
 #homepage-posts ul li:first-of-type a {
 	display: -ms-flexbox;
 	display: flex;

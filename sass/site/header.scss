@@ -1,5 +1,28 @@
 header {
 
+    .header-top {
+        @include phone {
+            display: none;
+        }
+        display: flex;
+
+        div.header-top-left {
+            display: flex;
+            flex: 45%;
+            justify-content: space-between;
+        }
+
+        p {
+            color: #7C7C7C;
+             margin-top: 0;
+            margin-bottom: rem-calc(15);
+        }
+
+        >p {
+            flex: 55%;
+        }
+    }
+
     .site-branding {
         display: flex;
         align-items: flex-end;
@@ -89,6 +112,7 @@ header {
                         li {
                             padding: .5em 0;
                             width: 100%;
+
                             a {
                                 width: 100%;
                             }
@@ -181,6 +205,7 @@ header {
 .glyphicon-remove {
     color: white;
 }
+
 .menu-toggle,
 .menu-open,
 .menu-menu-1-container,

@@ -13,9 +13,12 @@
 
 	</div><!-- #content -->
 
+<a class="anchor "name="contact-us-form" id="contact-us-form"></a>
 <div class="full-width contact-us-wrap">
 	<div class="contact-us">
-		<?php include get_template_directory() . '/contact/contact.php'; ?>
+		<?php // include get_template_directory() . '/contact/contact.php'; ?>
+		<h2>Contact Us</h2>
+		<?php echo do_shortcode('[contact-form-7 id="115" title="Contact form 1"]') ?>
 	</div>
 </div>
 

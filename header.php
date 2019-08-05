@@ -32,6 +32,15 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wildwoodnature' ); ?></a>
 
 	<header id="masthead" class="site-header">
+
+		<div class="header-top">
+			<p>Portland, OR 97231</p>
+			<div class="header-top-left">
+				<p>Phone: <a href="tel:406-656-6916">406 656 6916</a></p>
+				<p>Email: <a href="mailto:nfravel@wildwoodnatureschool.com">nfravel@wildwoodnatureschool.com</a></p>
+			</div>
+		</div>
+				
 		<div class="site-branding">
 
 		<a href="/" id="logo-home">

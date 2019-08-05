@@ -931,6 +931,13 @@ div.full-width {
 	width: 100vw;
 	position: relative;
 	left: calc(-1 * (100vw - 100%) / 2);
+	padding: .5em;
+	text-align: center;
+	color: white;
+}
+
+div.full-width p {
+	font-size: 18px;
 }
 
 div.full-width div#contact-us {
@@ -963,6 +970,10 @@ div.full-width h2 {
 	}
 }
 
+div.full-width p {
+	color: white;
+}
+
 div.full-width span.glyphicon {
 	color: white;
 	font-size: 4.5rem;
@@ -972,6 +983,13 @@ div.full-width span.glyphicon {
 	div.full-width span.glyphicon {
 		margin-bottom: 2rem;
 	}
+}
+
+a.anchor {
+	display: block;
+	position: relative;
+	top: -250px;
+	visibility: hidden;
 }
 
 #homepage-programs-wrap {
@@ -1113,6 +1131,29 @@ body.container {
 	padding: 75px 25px;
 }
 
+.full-width.contact-us-wrap form .wpcf7-validation-errors {
+	color: red;
+	font-size: 20px;
+}
+
+.full-width.contact-us-wrap form p {
+	margin: 0;
+}
+
+.full-width.contact-us-wrap form p input {
+	width: 100%;
+}
+
+.full-width.contact-us-wrap form .wpcf7-not-valid,
+.full-width.contact-us-wrap form div.wpcf7-validation-errors {
+	border: 2px solid red;
+}
+
+.full-width.contact-us-wrap form .wpcf7-mail-sent-ok {
+	font-size: 20px;
+	color: #0B8B6D;
+}
+
 @media (max-width: 767px) {
 	.full-width.contact-us-wrap {
 		padding: 25px 15px;
@@ -1188,7 +1229,7 @@ body.container {
 }
 
 .full-width.contact-us-wrap .contact-us form textarea {
-	height: 100px;
+	height: 12.5rem;
 	resize: none;
 }
 
@@ -1314,6 +1355,37 @@ body.container {
 /*--------------------------------------------------------------
 ## header
 --------------------------------------------------------------*/
+header .header-top {
+	display: -ms-flexbox;
+	display: flex;
+}
+
+@media (max-width: 767px) {
+	header .header-top {
+		display: none;
+	}
+}
+
+header .header-top div.header-top-left {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex: 45%;
+	    flex: 45%;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+}
+
+header .header-top p {
+	color: #7C7C7C;
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+}
+
+header .header-top > p {
+	-ms-flex: 55%;
+	    flex: 55%;
+}
+
 header .site-branding {
 	display: -ms-flexbox;
 	display: flex;

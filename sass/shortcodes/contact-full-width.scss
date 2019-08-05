@@ -9,6 +9,31 @@
     align-items: center;
     padding: 75px 25px;
 
+    form {
+        .wpcf7-validation-errors {
+            color: red;
+            font-size: 20px;
+        }
+
+        p {
+            margin: 0;
+
+            input {
+                width: 100%;
+            }
+        }
+
+        .wpcf7-not-valid,
+        div.wpcf7-validation-errors {
+            border: 2px solid red;
+        }
+
+        .wpcf7-mail-sent-ok {
+            font-size: 20px;
+            color: #0B8B6D;
+        }
+    }
+
     @include phone {
         padding: 25px 15px;
         min-height: 0;
@@ -33,6 +58,7 @@
             input,
             textarea {
                 margin: .5em 0;
+
                 @include phone {
                     margin: .25em 0;
                 }
@@ -67,7 +93,7 @@
             }
 
             textarea {
-                height: 100px;
+                height: rem-calc(125);
                 resize: none;
 
                 @include phone {

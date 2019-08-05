@@ -22,7 +22,7 @@ get_header();
                 <div id='contact-us'>
                     <h2>Contact us to schedule a tour now!</h2>
                     <span class='glyphicon glyphicon-calendar' aria-hidden='true'></span>
-                    <a class='btn secondary'>Contact</a>
+                    <a class='btn secondary' href='#contact-us-form'>Contact</a>
                 </div>    
             [/full-width]"
         ); ?>

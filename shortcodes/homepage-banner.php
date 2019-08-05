@@ -6,7 +6,7 @@
                 while( have_posts() ) {
                 the_post();
                   the_content();  } } ?>
-        <a href="" class="btn secondary">Get in touch with us</a>
+        <a href="/contact/" class="btn secondary">Get in touch with us</a>
     </div>
 
 </div>

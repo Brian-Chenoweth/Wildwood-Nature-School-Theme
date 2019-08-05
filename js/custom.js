@@ -174,7 +174,7 @@ var $ = jQuery.noConflict();
     $('.menu-burger-menu').click(function (e) {
         e.preventDefault();
         $('.menu-menu-1-container').toggleClass('active');
-        $('.menu').slideToggle(300);
+        $('.menu').slideToggle(200);
         // $('.menu-open').slideToggle(300);
     });
 

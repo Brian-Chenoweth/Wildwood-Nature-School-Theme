@@ -30,6 +30,6 @@
 
     </div>
 
-<a class="btn" href="#">Learn More</a>
+<a class="btn" href="/about-us/">Learn More</a>
 
 </div>

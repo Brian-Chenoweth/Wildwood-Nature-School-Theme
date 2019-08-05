@@ -1102,15 +1102,15 @@ a.anchor {
 
 #homepage-banner-wrap {
 	background-image: url("/wp-content/themes/wildwoodnature/img/wildwood-hero.png");
-	height: 70rem;
 	background-size: cover;
 	background-position: center;
+	padding: 0;
 }
 
 #homepage-banner-wrap #homepage-banner {
 	max-width: 117rem;
 	margin: 0 auto;
-	padding: 10rem 1.5rem 4.5rem;
+	padding: 10rem 1.5rem 10rem;
 }
 
 #homepage-banner-wrap #homepage-banner h1 {
@@ -1118,6 +1118,7 @@ a.anchor {
 	max-width: 63%;
 	margin: 2.5rem 0;
 	letter-spacing: 0.1rem;
+	margin-top: 0;
 }
 
 #homepage-banner-wrap #homepage-banner p {

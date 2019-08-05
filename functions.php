@@ -217,6 +217,7 @@ function get_recent_posts($atts) {
 		echo '<div id="'.$id.'">';
 			foreach( $recent_posts as $recent ){
 
+			$date = get_the_date( 'd M, Y', $recent["ID"] );
 
 			$feat_Img = wp_get_attachment_url( get_post_thumbnail_id($recent["ID"]) );
 
@@ -230,7 +231,7 @@ function get_recent_posts($atts) {
 				$i++;
 				echo '<ul class="post-'.$i.'">
 				<li><a href="' . get_permalink($recent["ID"]) . '"><img src="'. $final_feat .'"></a></li>
-						<li>'.get_the_date( 'd M, Y' ).'</li>
+						<li>'.$date.'</li>
 						<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a></li> 
 						<li> '.get_the_excerpt($recent["ID"]).'</li>
 						<li>By: '.get_the_author_meta('display_name', $author_id).'</li>

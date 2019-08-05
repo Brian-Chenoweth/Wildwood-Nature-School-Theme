@@ -30,6 +30,15 @@ get_header();
         
         <?php echo do_shortcode("[get_recent_posts id='homepage-posts']"); ?>
 
+        <?php echo do_shortcode(
+            "[full-width]
+                <div id='located'>
+                    <h3>Conveniently located adjacent to Forest Park, easily reached from areas of Portland, Beaverton and Hillsboro.</h3>
+                </div>    
+            [/full-width]"
+        ); ?>
+
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

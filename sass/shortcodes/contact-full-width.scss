@@ -55,6 +55,10 @@
             display: flex;
             flex-direction: column;
 
+            p {
+                max-width: none;
+            }
+
             input,
             textarea {
                 margin: .5em 0;

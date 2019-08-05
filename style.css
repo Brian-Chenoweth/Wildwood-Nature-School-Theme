@@ -1220,6 +1220,10 @@ body.container {
 	    flex-direction: column;
 }
 
+.full-width.contact-us-wrap .contact-us form p {
+	max-width: none;
+}
+
 .full-width.contact-us-wrap .contact-us form input,
 .full-width.contact-us-wrap .contact-us form textarea {
 	margin: .5em 0;

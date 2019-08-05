@@ -975,6 +975,9 @@ div.full-width h2 {
 
 div.full-width p {
 	color: white;
+	max-width: 100rem;
+	margin: 15px auto;
+	padding: 0 1em;
 }
 
 div.full-width span.glyphicon {
@@ -1725,18 +1728,6 @@ main.article-single .post-thumbnail {
 	    justify-content: center;
 	-ms-flex-align: center;
 	    align-items: center;
-}
-
-main.article-single figure {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-direction: column;
-	    flex-direction: column;
-	-ms-flex-pack: center;
-	    justify-content: center;
-	-ms-flex-align: center;
-	    align-items: center;
-	width: 100% !important;
 }
 
 .nav-wrap .nav-links {

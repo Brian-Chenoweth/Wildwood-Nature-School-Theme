@@ -41,6 +41,9 @@ div.full-width {
 
     p {
         color: white;
+        max-width: 100rem;
+        margin: 15px auto;
+        padding: 0 1em;
     }
 
     span.glyphicon {

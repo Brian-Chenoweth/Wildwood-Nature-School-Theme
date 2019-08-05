@@ -192,6 +192,12 @@ function get_post_page_content( $atts ) {
 add_shortcode( 'my_content', 'get_post_page_content' );
 
 
+function ww_get_author( $post_id = 0 ){
+     $post = get_post( $post_id );
+     return $post->post_author;
+}
+
+
 
 function get_recent_posts($atts) {
 	$args = array( 'numberposts' => '3' );
@@ -217,6 +223,8 @@ function get_recent_posts($atts) {
 		echo '<div id="'.$id.'">';
 			foreach( $recent_posts as $recent ){
 
+			$ww_author = ww_get_author($recent["ID"]);
+
 			$date = get_the_date( 'd M, Y', $recent["ID"] );
 
 			$feat_Img = wp_get_attachment_url( get_post_thumbnail_id($recent["ID"]) );
@@ -234,7 +242,7 @@ function get_recent_posts($atts) {
 						<li>'.$date.'</li>
 						<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a></li> 
 						<li> '.get_the_excerpt($recent["ID"]).'</li>
-						<li>By: '.get_the_author_meta('display_name', $author_id).'</li>
+						<li>By: '.get_the_author_meta('display_name', $ww_author).'</li>
 					</ul>';
 				$counter++;
 			}

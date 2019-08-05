@@ -1696,6 +1696,23 @@ footer .info-wrap .nap-info nav.secondary-navigation .menu-secondary-container #
 	display: none;
 }
 
+main.article-single {
+	margin: 5rem 0;
+}
+
+main.article-single a.read-more.btn,
+main.article-single .entry-footer,
+main.article-single .comment-notes,
+main.article-single .comment-form-comment,
+main.article-single .comment-form-author,
+main.article-single .comment-form-email,
+main.article-single .comment-form-url,
+main.article-single .comment-form-cookies-consent,
+main.article-single .form-submit,
+main.article-single #reply-title {
+	display: none;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

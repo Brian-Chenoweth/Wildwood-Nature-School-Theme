@@ -54,7 +54,7 @@
 	</div><!-- .entry-content -->
 
 
-	<?php echo'<a class="btn" href="' . esc_url( get_permalink() ) . '" rel="bookmark">', 'Read More</a>'; ?>
+	<?php echo'<a class="read-more btn" href="' . esc_url( get_permalink() ) . '" rel="bookmark">', 'Read More</a>'; ?>
 
 	<footer class="entry-footer">
 		<?php wildwoodnature_entry_footer(); ?>

@@ -8,6 +8,7 @@ h1:not(#homepage-h1) {
     @include tablet-down {
         font-size: rem-calc(25);
     }
+
     color: $green;
 }
 
@@ -20,6 +21,22 @@ h2 {
         font-size: rem-calc(22);
     }
 }
+
+h3 {
+    font-size: rem-calc(24);
+    margin: rem-calc(20 0);
+
+    @include tablet-down {
+        font-size: rem-calc(18);
+    }
+}
+
+@include tablet-down {
+    p {
+        font-size: 16px;
+    }
+}
+
 
 h1,
 h2,

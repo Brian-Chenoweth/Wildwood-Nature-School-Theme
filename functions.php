@@ -208,13 +208,28 @@ function get_recent_posts($atts) {
 	$i = 0;
 	$counter = 0;
 
+	// $feat_Img = (wp_get_attachment_url( get_post_thumbnail_id($recent["ID"]) ));
+	
+
+
 	if($counter = 3) {
 		echo '<h2 id="latest-posts">Latest Blog Posts</h2>';
 		echo '<div id="'.$id.'">';
 			foreach( $recent_posts as $recent ){
+
+
+			$feat_Img = wp_get_attachment_url( get_post_thumbnail_id($recent["ID"]) );
+
+			if(empty($feat_Img)) {
+				$final_feat = "/wp-content/themes/wildwoodnature/img/feat_blog_fallback.jpg";
+			}
+			else {
+				$final_feat = wp_get_attachment_url( get_post_thumbnail_id($recent["ID"]) );
+			}
+
 				$i++;
 				echo '<ul class="post-'.$i.'">
-				<li><a href="' . get_permalink($recent["ID"]) . '"><img src="'. wp_get_attachment_url( get_post_thumbnail_id($recent["ID"]) ) .'"></a></li>
+				<li><a href="' . get_permalink($recent["ID"]) . '"><img src="'. $final_feat .'"></a></li>
 						<li>'.get_the_date( 'd M, Y' ).'</li>
 						<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a></li> 
 						<li> '.get_the_excerpt($recent["ID"]).'</li>

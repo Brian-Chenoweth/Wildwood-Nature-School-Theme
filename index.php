@@ -24,12 +24,13 @@ get_header();
 			if ( is_home() && ! is_front_page() ) :
 				?>
 				<header>
-				<h2>test</h2>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
 				<?php
 			endif;
-
+?>
+			<div class="blog-landing">
+<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
@@ -51,6 +52,9 @@ get_header();
 
 		endif;
 		?>
+
+			</div>
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

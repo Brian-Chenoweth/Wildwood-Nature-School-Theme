@@ -33,7 +33,7 @@
 
 	<div class="entry-content">
 		<?php
-		the_content( sprintf(
+		the_excerpt( sprintf(
 			wp_kses(
 				/* translators: %s: Name of current post. Only visible to screen readers */
 				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'wildwoodnature' ),
@@ -53,7 +53,12 @@
 		?>
 	</div><!-- .entry-content -->
 
+
+	<?php echo'<a class="btn" href="' . esc_url( get_permalink() ) . '" rel="bookmark">', 'Read More</a>'; ?>
+
 	<footer class="entry-footer">
 		<?php wildwoodnature_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
+
+
 </article><!-- #post-<?php the_ID(); ?> -->

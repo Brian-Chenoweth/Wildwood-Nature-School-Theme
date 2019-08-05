@@ -1652,6 +1652,51 @@ footer .info-wrap .nap-info nav.secondary-navigation .menu-secondary-container #
 }
 
 /*--------------------------------------------------------------
+## blog
+--------------------------------------------------------------*/
+.blog-landing {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+	margin: 5rem 0;
+}
+
+.blog-landing article {
+	width: 30%;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+	.blog-landing article {
+		width: 100%;
+	}
+	.blog-landing article img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+		width: 100%;
+	}
+}
+
+.blog-landing article a.btn {
+	width: 100%;
+}
+
+.blog-landing article h2.entry-title {
+	font-size: 24px;
+}
+
+.blog-landing article .entry-meta,
+.blog-landing article .entry-footer {
+	display: none;
+}
+
+/*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
 .sticky {

@@ -932,8 +932,11 @@ div.full-width {
 	position: relative;
 	left: calc(-1 * (100vw - 100%) / 2);
 	padding: .5em;
-	text-align: center;
 	color: white;
+}
+
+div.full-width:not(#homepage-banner-wrap) {
+	text-align: center;
 }
 
 div.full-width p {

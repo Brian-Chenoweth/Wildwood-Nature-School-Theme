@@ -4,7 +4,10 @@ div.full-width {
     position: relative;
     left: calc(-1 * (100vw - 100%) / 2);
     padding: .5em;
-    text-align: center;
+
+    &:not(#homepage-banner-wrap) {
+        text-align: center;
+    }
 
     p {
         font-size: 18px;

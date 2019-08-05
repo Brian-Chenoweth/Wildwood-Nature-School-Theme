@@ -1056,8 +1056,8 @@ a.anchor {
 }
 
 #homepage-programs-wrap #homepage-programs .program-1, #homepage-programs-wrap #homepage-programs .program-2, #homepage-programs-wrap #homepage-programs .program-3 {
-	-ms-flex: 0 0 31.8333%;
-	    flex: 0 0 31.8333%;
+	-ms-flex: 0 0 32%;
+	    flex: 0 0 32%;
 	text-align: center;
 	display: -ms-flexbox;
 	display: flex;
@@ -1087,10 +1087,10 @@ a.anchor {
 		-ms-flex-direction: column;
 		    flex-direction: column;
 	}
-	#homepage-programs-wrap #homepage-programs .program-1, #homepage-programs-wrap #homepage-programs .program-2, #homepage-programs-wrap #homepage-programs .program-3, #homepage-programs-wrap #homepage-programs .program-4 {
+	#homepage-programs-wrap #homepage-programs .program-1, #homepage-programs-wrap #homepage-programs .program-2, #homepage-programs-wrap #homepage-programs .program-3 {
 		margin: 0 0 3rem 0;
 	}
-	#homepage-programs-wrap #homepage-programs .program-1 img, #homepage-programs-wrap #homepage-programs .program-2 img, #homepage-programs-wrap #homepage-programs .program-3 img, #homepage-programs-wrap #homepage-programs .program-4 img {
+	#homepage-programs-wrap #homepage-programs .program-1 img, #homepage-programs-wrap #homepage-programs .program-2 img, #homepage-programs-wrap #homepage-programs .program-3 img {
 		width: 100%;
 	}
 }

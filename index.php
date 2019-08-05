@@ -44,6 +44,11 @@ get_header();
 
 			endwhile;
 
+?>
+</div>
+
+<div class="nav-wrap">
+			<?php
 			the_posts_navigation();
 
 		else :
@@ -53,7 +58,7 @@ get_header();
 		endif;
 		?>
 
-			</div>
+</div>			
 
 
 		</main><!-- #main -->

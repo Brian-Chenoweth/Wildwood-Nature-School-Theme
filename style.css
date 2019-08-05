@@ -1700,6 +1700,10 @@ main.article-single {
 	margin: 5rem 0;
 }
 
+main.article-single .entry-meta {
+	margin-bottom: 25px;
+}
+
 main.article-single a.read-more.btn,
 main.article-single .entry-footer,
 main.article-single .comment-notes,
@@ -1711,6 +1715,51 @@ main.article-single .comment-form-cookies-consent,
 main.article-single .form-submit,
 main.article-single #reply-title {
 	display: none;
+}
+
+main.article-single .post-thumbnail {
+	margin: 0 auto;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	-ms-flex-align: center;
+	    align-items: center;
+}
+
+main.article-single figure {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	-ms-flex-align: center;
+	    align-items: center;
+	width: 100% !important;
+}
+
+.nav-wrap .nav-links {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+}
+
+.nav-wrap .nav-links .nav-previous,
+.nav-wrap .nav-links .nav-next {
+	width: auto;
+	float: none;
+}
+
+.nav-wrap .nav-links .nav-previous {
+	-ms-flex-order: 2;
+	    order: 2;
+}
+
+.nav-wrap .nav-links .nav-next {
+	-ms-flex-order: 1;
+	    order: 1;
 }
 
 /*--------------------------------------------------------------

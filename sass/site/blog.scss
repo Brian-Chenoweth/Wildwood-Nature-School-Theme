@@ -45,6 +45,10 @@
 main.article-single {
     margin: 5rem 0;
 
+    .entry-meta {
+        margin-bottom: 25px;
+    }
+
     a.read-more.btn,
     .entry-footer,
     .comment-notes,
@@ -56,5 +60,43 @@ main.article-single {
     .form-submit,
     #reply-title {
         display: none;
+    }
+
+    .post-thumbnail {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+    }
+
+}
+
+
+.nav-wrap {
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+
+        .nav-previous,
+        .nav-next {
+            width: auto;
+            float: none;
+        }
+
+        .nav-previous {
+            order: 2;
+        }
+
+        .nav-next {
+            order: 1;
+        }
     }
 }

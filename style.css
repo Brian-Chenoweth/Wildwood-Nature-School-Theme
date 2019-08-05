@@ -1055,9 +1055,9 @@ a.anchor {
 	    justify-content: space-between;
 }
 
-#homepage-programs-wrap #homepage-programs .program-1, #homepage-programs-wrap #homepage-programs .program-2, #homepage-programs-wrap #homepage-programs .program-3, #homepage-programs-wrap #homepage-programs .program-4 {
-	-ms-flex: 0 0 23.5%;
-	    flex: 0 0 23.5%;
+#homepage-programs-wrap #homepage-programs .program-1, #homepage-programs-wrap #homepage-programs .program-2, #homepage-programs-wrap #homepage-programs .program-3 {
+	-ms-flex: 0 0 31.8333%;
+	    flex: 0 0 31.8333%;
 	text-align: center;
 	display: -ms-flexbox;
 	display: flex;
@@ -1065,16 +1065,21 @@ a.anchor {
 	    flex-direction: column;
 }
 
-#homepage-programs-wrap #homepage-programs .program-1 a.program-link, #homepage-programs-wrap #homepage-programs .program-2 a.program-link, #homepage-programs-wrap #homepage-programs .program-3 a.program-link, #homepage-programs-wrap #homepage-programs .program-4 a.program-link {
+#homepage-programs-wrap #homepage-programs .program-1 a.program-link, #homepage-programs-wrap #homepage-programs .program-2 a.program-link, #homepage-programs-wrap #homepage-programs .program-3 a.program-link {
 	font-size: 1.8rem;
 	margin: 0 0 1em;
 	-ms-flex: 2;
 	    flex: 2;
 }
 
-#homepage-programs-wrap #homepage-programs .program-1 p, #homepage-programs-wrap #homepage-programs .program-2 p, #homepage-programs-wrap #homepage-programs .program-3 p, #homepage-programs-wrap #homepage-programs .program-4 p {
+#homepage-programs-wrap #homepage-programs .program-1 p, #homepage-programs-wrap #homepage-programs .program-2 p, #homepage-programs-wrap #homepage-programs .program-3 p {
 	margin: 1em 0 1em;
 	line-height: 2.5rem;
+}
+
+#homepage-programs-wrap #homepage-programs .program-1 img, #homepage-programs-wrap #homepage-programs .program-2 img, #homepage-programs-wrap #homepage-programs .program-3 img {
+	width: 100%;
+	height: auto;
 }
 
 @media (max-width: 767px) {

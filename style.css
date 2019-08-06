@@ -877,6 +877,7 @@ h2#latest-posts {
 
 #homepage-posts ul li {
 	list-style-type: none;
+	margin: 0;
 }
 
 @media (max-width: 767px) {
@@ -902,12 +903,14 @@ h2#latest-posts {
 	}
 }
 
-#homepage-posts ul li:first-of-type a {
-	display: -ms-flexbox;
-	display: flex;
+@media (min-width: 1200px) {
+	#homepage-posts ul li:first-of-type a {
+		display: -ms-flexbox;
+		display: flex;
+	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
 	#homepage-posts ul li:first-of-type a {
 		display: block;
 	}

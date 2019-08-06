@@ -38,6 +38,7 @@ h2#latest-posts {
 
         li {
             list-style-type: none;
+            margin: 0;
 
             @include phone {
                 margin: rem-calc(10 0);
@@ -61,9 +62,12 @@ h2#latest-posts {
 
 
                 a {
-                    display: flex;
 
-                    @include phone {
+                    @media (min-width: 1200px) {
+                        display: flex;
+                    }
+
+                    @include tablet-down {
                         display: block;
                     }
                 }

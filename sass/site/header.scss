@@ -90,18 +90,23 @@ header {
                     padding: 25px;
                     display: flex;
                     flex-direction: column;
-                    height: 250px;
+                    // height: 250px;
                     justify-content: space-between;
 
                     li:not(.current-menu-item) {
                         a:hover {
                             line-height: 21.8571px;
                         }
+
+                        padding: .75em 0;
+
                     }
 
                     li.current-menu-item:hover {
                         // line-height: 21.8571px;
                     }
+
+
 
                     @include phone {
                         background-color: transparent;

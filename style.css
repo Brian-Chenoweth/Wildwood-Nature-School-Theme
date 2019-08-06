@@ -1066,10 +1066,14 @@ a.anchor {
 }
 
 #homepage-programs-wrap #homepage-programs .program-1 a.program-link, #homepage-programs-wrap #homepage-programs .program-2 a.program-link, #homepage-programs-wrap #homepage-programs .program-3 a.program-link {
-	font-size: 1.8rem;
+	font-size: 2rem;
 	margin: 0 0 1em;
 	-ms-flex: 2;
 	    flex: 2;
+}
+
+#homepage-programs-wrap #homepage-programs .program-1 a.program-link span, #homepage-programs-wrap #homepage-programs .program-2 a.program-link span, #homepage-programs-wrap #homepage-programs .program-3 a.program-link span {
+	font-size: 1.5rem;
 }
 
 #homepage-programs-wrap #homepage-programs .program-1 p, #homepage-programs-wrap #homepage-programs .program-2 p, #homepage-programs-wrap #homepage-programs .program-3 p {
@@ -1490,9 +1494,12 @@ header .site-branding nav.main-navigation ul#primary-menu ul.sub-menu {
 	display: flex;
 	-ms-flex-direction: column;
 	    flex-direction: column;
-	height: 250px;
 	-ms-flex-pack: justify;
 	    justify-content: space-between;
+}
+
+header .site-branding nav.main-navigation ul#primary-menu ul.sub-menu li:not(.current-menu-item) {
+	padding: .75em 0;
 }
 
 header .site-branding nav.main-navigation ul#primary-menu ul.sub-menu li:not(.current-menu-item) a:hover {

@@ -32,9 +32,12 @@
                 flex-direction: column;
 
                 a.program-link {
-                    font-size: 1.8rem;
+                    font-size: 2rem;
                     margin: 0 0 1em;
                     flex: 2;
+                    span {
+                        font-size: 1.5rem;
+                    }
                 }
 
                 p {

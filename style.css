@@ -1787,16 +1787,6 @@ main.article-single .post-thumbnail {
 	float: none;
 }
 
-.nav-wrap .nav-links .nav-previous {
-	-ms-flex-order: 2;
-	    order: 2;
-}
-
-.nav-wrap .nav-links .nav-next {
-	-ms-flex-order: 1;
-	    order: 1;
-}
-
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -1833,6 +1823,14 @@ main.article-single .post-thumbnail {
 
 .bypostauthor {
 	display: block;
+}
+
+@media (max-width: 767px) {
+	.alignright,
+	.alignleft {
+		width: 100% !important;
+		margin-bottom: 15px !important;
+	}
 }
 
 /*--------------------------------------------------------------

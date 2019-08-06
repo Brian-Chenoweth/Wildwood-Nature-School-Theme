@@ -414,7 +414,7 @@ h2 {
 
 @media (max-width: 1023px) {
 	h2 {
-		font-size: 2.2rem;
+		font-size: 2.3rem;
 	}
 }
 
@@ -1602,6 +1602,39 @@ header .site-branding nav.main-navigation ul#primary-menu ul.sub-menu li:not(.cu
 
 .sub-menu-clicked {
 	position: static !important;
+}
+
+/*--------------------------------------------------------------
+## ipad
+--------------------------------------------------------------*/
+@media (max-width: 1024px) {
+	header .header-top div.header-top-left {
+		-ms-flex-direction: column;
+		    flex-direction: column;
+		-ms-flex: 55%;
+		    flex: 55%;
+		text-align: right;
+	}
+	header .header-top div.header-top-left p {
+		margin-bottom: 0;
+	}
+	#homepage-banner-wrap #homepage-banner p,
+	#homepage-banner-wrap #homepage-banner h1 {
+		max-width: 100%;
+	}
+	#homepage-programs-wrap #homepage-programs .program-1 a.program-link,
+	#homepage-programs-wrap #homepage-programs .program-2 a.program-link,
+	#homepage-programs-wrap #homepage-programs .program-3 a.program-link {
+		-ms-flex: none;
+		    flex: none;
+	}
+	#homepage-programs-wrap #homepage-programs .program-1 a.program-link span, #homepage-programs-wrap #homepage-programs .program-1 a.program-link br,
+	#homepage-programs-wrap #homepage-programs .program-2 a.program-link span,
+	#homepage-programs-wrap #homepage-programs .program-2 a.program-link br,
+	#homepage-programs-wrap #homepage-programs .program-3 a.program-link span,
+	#homepage-programs-wrap #homepage-programs .program-3 a.program-link br {
+		display: none;
+	}
 }
 
 /*--------------------------------------------------------------

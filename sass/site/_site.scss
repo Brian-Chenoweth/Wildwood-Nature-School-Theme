@@ -8,6 +8,12 @@
 
 
 /*--------------------------------------------------------------
+## ipad
+--------------------------------------------------------------*/
+@import "ipad";
+
+
+/*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
 @import "footer";
@@ -29,9 +35,10 @@
 @import "primary/comments";
 
 @include phone {
+
     .alignright,
     .alignleft {
-        width: 100%!important;
-        margin-bottom: 15px!important;
+        width: 100% !important;
+        margin-bottom: 15px !important;
     }
 }

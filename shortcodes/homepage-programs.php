@@ -11,7 +11,7 @@
         </div>
 
         <div class="program-2">
-            <a href="/programs/preschool/" class="program-link">Prechool</a>
+            <a href="/programs/preschool/" class="program-link">Preschool</a>
             <img src="/wp-content/themes/wildwoodnature/img/preschool-home.jpg" alt="">
             <p>For children ages 3 to 5 year olds who are fully toilet-trained.</p>
         </div>

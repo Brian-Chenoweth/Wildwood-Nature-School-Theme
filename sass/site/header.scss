@@ -188,7 +188,7 @@ header {
     .site-branding {
         width: 100vw;
         position: fixed;
-        background-color: $green;
+        background-color: darken($green, 15%);
         left: calc(-1 * (100vw - 100%) / 2);
         top: 0;
         z-index: 9;

@@ -1554,7 +1554,7 @@ header .site-branding nav.main-navigation ul#primary-menu ul.sub-menu li:not(.cu
 	.site-branding {
 		width: 100vw;
 		position: fixed;
-		background-color: #0B8B6D;
+		background-color: #054435;
 		left: calc(-1 * (100vw - 100%) / 2);
 		top: 0;
 		z-index: 9;

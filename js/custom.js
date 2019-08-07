@@ -180,7 +180,23 @@ var $ = jQuery.noConflict();
 
 
 
+    $('ul.menu li').bind('touchstart', function () {
+        $(this).addClass('hover');
+    }).bind('touchend', function () {
+        $(this).removeClass('hover');
+    });
 
+
+
+
+
+
+
+    $(function () {                       //run when the DOM is ready
+        $(".navbar-toggler").click(function () {  //use a class, since your ID gets mangled
+            $("span.line").toggleClass("transformed-x");      //add the class to the clicked element
+        });
+    });
 
 
 })(jQuery);

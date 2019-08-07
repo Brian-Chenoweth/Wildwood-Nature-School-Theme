@@ -314,3 +314,7 @@ add_shortcode('full-width-contact', 'display_full_width_contact');
 
 // custom jquery
 wp_enqueue_script( 'wildwoodnature-navigation', get_template_directory_uri() . '/js/custom.js', array('jquery'), '20151215', true );
+
+
+
+

@@ -4,11 +4,17 @@
     background-size: cover;
     background-position: center;
     padding: 0;
+    // z-index: -9;
 
     #homepage-banner {
         max-width: 117rem;
         margin: 0 auto;
         padding: 10rem 1.5rem 10rem;
+        z-index: -9;
+
+        a.btn {
+            z-index: 999999;
+        }
 
         h1 {
             color: white;

@@ -33,12 +33,18 @@
             .program-3 {
                 a.program-link {
                     flex: none;
-                   span, br {
-                       display: none;
-                   }
+
+                    span,
+                    br {
+                        display: none;
+                    }
                 }
             }
         }
     }
 
+    header .site-branding {
+        // flex-direction: column;
+        // align-items: flex-start;
+    }
 }

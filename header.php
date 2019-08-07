@@ -46,26 +46,76 @@
 		<a href="/" id="logo-home">
 			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wildwood.png" alt="Wildwood Nature School" />
 		</a>
-		<nav id="site-navigation" class="main-navigation">
+		<!-- <nav id="site-navigation" class="main-navigation"> -->
 		<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="menu-burger-menu glyphicon glyphicon-menu-hamburger"></span></button> -->
 		
-		
+<!-- 		
 		<button class="mobile-only hamburger hamburger--collapse menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false">
 			<span class="hamburger-box menu-burger-menu">
 				<span class="hamburger-inner"></span>
 			</span>
-			</button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
+			</button> -->
+			<?php ## wp_nav_menu( array('theme_location' => 'menu-1','menu_id'        => 'primary-menu',) ); ?>
 
 
+
+			
+		<!--</nav> #site-navigation -->
+
+
+	<nav style="width: 100%;" class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+	<!-- <span class="navbar-toggler-icon"></span> -->
+	<!-- <input type="checkbox" id="checkbox-menu"> -->
+	<input type="checkbox" />
+	<span class="line"></span>
+	<span class="line"></span>
+	<span class="line"></span>
+  </button>
+  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+
+  <div style="width: 100%;" class="collapse navbar-collapse" id="navbarTogglerDemo03">
+
+
+<ul id="primary-menu" class="menu navbar-nav mr-auto mt-2 mt-lg-0"><li id="menu-item-95" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-95"><a href="/" aria-current="page">Home</a></li>
+<li id="menu-item-100" class="dropdown-submenu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-100"><a href="/about-us/">About Us</a>
+<ul class="sub-menu dropdown-menu">
+	<li id="menu-item-104" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-104"><a href="/about-us/a-typical-day/">A Typical Day</a></li>
+	<li id="menu-item-103" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-103"><a href="/about-us/developmental-goals/">Developmental Goals</a></li>
+	<li id="menu-item-102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-102"><a href="/about-us/our-staff/">Our Staff</a></li>
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="/about-us/calendar/">Calendar</a></li>
+</ul>
+</li>
+<li id="menu-item-266" class="dropdown-submenu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-266"><a href="/programs/">Programs</a>
+<ul class="sub-menu dropdown-menu">
+	<li id="menu-item-91" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91"><a href="/programs/toddlers/">Toddlers</a></li>
+	<li id="menu-item-92" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-92"><a href="/programs/preschool/">Preschool</a></li>
+	<li id="menu-item-106" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-106"><a href="/programs/consulting/">Consulting</a></li>
+</ul>
+</li>
+<li id="menu-item-90" class="dropdown-submenu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-90"><a href="/resources/">Resources</a>
+<ul class="sub-menu dropdown-menu">
+	<li id="menu-item-105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a href="/faqs/">FAQs</a></li>
+	<li id="menu-item-107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-107"><a href="/resources/immunization/">Immunization</a></li>
+</ul>
+</li>
+<li id="menu-item-96" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96"><a href="/blog/">Blog</a></li>
+<li id="menu-item-213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-213"><a href="/contact/">Contact</a></li>
+</ul>
+
+
+
+
+  </div>
+
+
+
+
+</nav>
 		</div><!-- .site-branding -->
 
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+

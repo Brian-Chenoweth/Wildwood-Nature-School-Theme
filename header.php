@@ -17,11 +17,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
+	
+
 	<?php wp_head(); ?>
 	
 <link rel="stylesheet" href="/wp-content/themes/wildwoodnature/bootstrap/css/bootstrap.min.css" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <?php require_once( ( get_template_directory() ). '/inc/schema.php' ); ?>
 
 

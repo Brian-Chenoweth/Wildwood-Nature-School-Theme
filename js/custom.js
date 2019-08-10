@@ -199,4 +199,17 @@ var $ = jQuery.noConflict();
     });
 
 
+    $('.slider').bxSlider({
+
+        controls: false,
+        pager: false,
+        autoHover: false,
+        ticker: true,
+        speed: 150000,
+        slideMargin: 0,
+        infiniteloop: true
+
+    });
+
+
 })(jQuery);

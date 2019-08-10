@@ -1294,6 +1294,19 @@ body.container {
 	}
 }
 
+.bx-wrapper {
+	margin-bottom: 0 !important;
+	background: #0B8B6D !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+.bx-wrapper .bx-viewport ul.slider li {
+	height: 250px !important;
+	width: auto !important;
+	margin-right: 10px !important;
+}
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/

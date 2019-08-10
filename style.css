@@ -1305,6 +1305,17 @@ body.container {
 	height: 250px !important;
 	width: auto !important;
 	margin-right: 10px !important;
+	display: -ms-flexbox !important;
+	display: flex !important;
+	-ms-flex-pack: center !important;
+	    justify-content: center !important;
+	-ms-flex-align: center !important;
+	    align-items: center !important;
+}
+
+.bx-wrapper .bx-viewport ul.slider li img {
+	height: 250px !important;
+	width: auto !important;
 }
 
 /*--------------------------------------------------------------
@@ -1968,11 +1979,6 @@ main.article-single .post-thumbnail {
 --------------------------------------------------------------*/
 .sticky {
 	display: block;
-}
-
-.post,
-.page {
-	margin: 0 0 1.5em;
 }
 
 .updated:not(.published) {

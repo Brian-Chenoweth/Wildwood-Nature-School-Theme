@@ -258,8 +258,14 @@ add_shortcode( 'get_recent_posts', 'get_recent_posts' );
 
 
 function full_width_shortcode($atts = [], $content = null) {
+	
+	extract( shortcode_atts( array(
+		'class' => null,
+		'id' => null,
+	), $atts ) );
+
 	ob_start();
-	echo'<div class="full-width">' . $content . '</div>';
+	echo'<div class="full-width" id="'.$id.'">' . $content . '</div>';
 	return ob_get_clean();
 }
 

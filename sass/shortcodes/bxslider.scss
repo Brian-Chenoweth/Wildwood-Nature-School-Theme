@@ -57,7 +57,7 @@
 
         display: flex;
         justify-content: space-between;
-        margin: 1em 0;
+        margin: 2em 0;
 
         >* {
             width: 32%;
@@ -66,6 +66,7 @@
                 width: 100%;
                 padding: 10px;
                 background-color: #EDEDED;
+                font-size: 14px;
             }
 
         }
@@ -84,7 +85,7 @@
 
         display: flex;
         justify-content: space-between;
-        margin: 1em 0;
+        margin: 2em 0;
 
         >* {
             width: 49%;
@@ -93,6 +94,7 @@
                 width: 100%;
                 padding: 10px;
                 background-color: #EDEDED;
+                font-size: 14px;
             }
 
         }
@@ -112,7 +114,7 @@
 
         display: flex;
         justify-content: space-between;
-        margin: 1em 0;
+        margin: 2em 0;
 
         >* {
             width: 100%;
@@ -121,6 +123,7 @@
                 width: 100%;
                 padding: 10px;
                 background-color: #EDEDED;
+                font-size: 14px;
             }
 
         }
@@ -160,5 +163,36 @@
     .wpcf7-not-valid,
     div.wpcf7-validation-errors {
         border: 2px solid red;
+    }
+
+
+    .wpcf7-form-control-signature-global-wrap {
+        background-color: #EDEDED;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    // .wpcf7-form-control-wrap {
+    //     width: auto;
+    // }
+
+
+
+    .wpcf7-form-control-wrap.wpcf7-form-control-signature-input-wrap.signature {
+        width: auto;
+    }
+
+    .wpcf7-form-control-signature-wrap {
+        width: 100% !important;
+    }
+
+    .wide-2.signature-2 {
+        .wpcf7-form-control-signature-wrap {
+            width: 100% !important;
+        }
+
+        .wpcf7-form-control-wrap.wpcf7-form-control-signature-input-wrap.signature2 {
+            width: auto!important;
+        }
     }
 }

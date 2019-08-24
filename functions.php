@@ -305,10 +305,6 @@ add_shortcode('homepage-banner', 'display_homepage_banner');
 
 
 
-
-
-
-
 function display_full_width_contact() {
 	include get_template_directory() . '/shortcodes/full-width-contact.php';
 }
@@ -316,6 +312,65 @@ function display_full_width_contact() {
 add_shortcode('full-width-contact', 'display_full_width_contact');
 
 
+
+function display_spanish_translation_video_4() {
+	ob_start();
+	include get_template_directory() . '/shortcodes/spanish-translation-video-4.php';
+	return ob_get_clean();
+}
+
+add_shortcode('spanish-translation-video-4', 'display_spanish_translation_video_4');
+
+
+
+
+function display_spanish_translation_video_3() {
+	ob_start();
+	include get_template_directory() . '/shortcodes/spanish-translation-video-3.php';
+	return ob_get_clean();
+}
+
+add_shortcode('spanish-translation-video-3', 'display_spanish_translation_video_3');
+
+
+
+
+function display_spanish_translation_video_2() {
+	ob_start();
+	include get_template_directory() . '/shortcodes/spanish-translation-video-2.php';
+	return ob_get_clean();
+}
+
+add_shortcode('spanish-translation-video-2', 'display_spanish_translation_video_2');
+
+
+
+
+
+function display_spanish_translation_video_1() {
+	ob_start();
+	include get_template_directory() . '/shortcodes/spanish-translation-video-1.php';
+	return ob_get_clean();
+}
+
+add_shortcode('spanish-translation-video-1', 'display_spanish_translation_video_1');
+
+
+function display_english_translation_video_1() {
+	ob_start();
+	include get_template_directory() . '/shortcodes/english-translation-video-1.php';
+	return ob_get_clean();
+}
+
+add_shortcode('english-translation-video-1', 'display_english_translation_video_1');
+
+function display_english_translation_video_2() {
+	ob_start();
+	include get_template_directory() . '/shortcodes/english-translation-video-2.php';
+	return ob_get_clean();
+}
+
+add_shortcode('english-translation-video-2', 'display_english_translation_video_2');
 
 
 // custom jquery

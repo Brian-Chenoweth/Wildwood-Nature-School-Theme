@@ -151,22 +151,19 @@ header {
 
 
 
-// .sub-menu-clicked {
-//     position: static !important;
-// }
-
-
 .dropdown-submenu:hover {
     .dropdown-menu {
-        // display: block;
         position: absolute;
         display: flex;
         flex-direction: column;
-        // height: 250px;
         justify-content: space-between;
         z-index: 99;
-        // left: 100%;
+        margin: 1px 0 0 0;
 
+        li {
+            padding: rem-calc(5 5 5 0);
+            font-size: rem-calc(16);
+        }
     }
 }
 
@@ -182,6 +179,7 @@ ul#primary-menu {
     // flex: 1;
     position: relative;
     list-style-type: none;
+    font-size: 16px;
 }
 
 button.navbar-toggler {
@@ -193,74 +191,6 @@ button.navbar-toggler {
 
 }
 
-
-// span.line {
-//     display: block;
-//     width: 33px;
-//     height: 4px;
-//     margin-bottom: 5px;
-//     position: relative;
-//     background: #cdcdcd;
-//     border-radius: 3px;
-//     z-index: 1;
-//     transform-origin: 4px 0px;
-
-//     // transform-origin: 4px 0px;
-
-//     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-//         background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
-//         opacity 0.55s ease;
-// }
-
-
-// button.navbar-toggler span.transformed-x {
-//     opacity: 1;
-//     transform: rotate(45deg) translate(-2px, -1px);
-//     background: #232323;
-// }
-
-/*
- * But let's hide the middle one.
- */
-// button.navbar-toggler span.transformed-x:nth-last-child(3) {
-//     opacity: 0;
-//     transform: rotate(0deg) scale(0.2, 0.2);
-// }
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-// button.navbar-toggler span.transformed-x:nth-last-child(2) {
-//     transform: rotate(-45deg) translate(0, -1px);
-// }
-
-// #checkbox-menu {
-//     /* visibility: hidden; */
-//     /* opacity: 0; */
-//     z-index: 0;
-//     /* height: 38px; */
-//     top: 0;
-//     position: absolute;
-//     margin-top: 0;
-//     height: 100%;
-//     width: 100%;
-//     left: 0;
-//     opacity: 0;
-// }
-
-// button.navbar-toggler {
-//     height: 50px;
-//     position: absolute;
-// }
-
-
-// span.line:first-child {
-//     transform-origin: 0% 0%;
-// }
-
-// span.line:nth-last-child(2) {
-//     transform-origin: 0% 100%;
-// }
 
 
 

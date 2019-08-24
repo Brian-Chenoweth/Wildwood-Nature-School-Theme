@@ -85,13 +85,12 @@
 <ul id="primary-menu" class="menu navbar-nav mr-auto mt-2 mt-lg-0"><li id="menu-item-95" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item menu-item-95"><a href="/" aria-current="page">Home</a></li>
 <li id="menu-item-100" class="dropdown-submenu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-100"><a href="/about-us/">About Us</a>
 <ul class="sub-menu dropdown-menu">
-	<li id="menu-item-104" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-104"><a href="/about-us/a-typical-day/">A Typical Day</a></li>
 	<li id="menu-item-103" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-103"><a href="/about-us/developmental-goals/">Developmental Goals</a></li>
 	<li id="menu-item-102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-102"><a href="/about-us/our-staff/">Our Staff</a></li>
 	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="/about-us/calendar/">Calendar</a></li>
 </ul>
 </li>
-<li id="menu-item-266" class="dropdown-submenu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-266"><a href="/programs/">Programs</a>
+<li id="menu-item-266" class="dropdown-submenu menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-266"><a href="#">Programs</a>
 <ul class="sub-menu dropdown-menu">
 	<li id="menu-item-91" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91"><a href="/programs/toddlers/">Toddlers</a></li>
 	<li id="menu-item-92" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-92"><a href="/programs/preschool/">Preschool</a></li>

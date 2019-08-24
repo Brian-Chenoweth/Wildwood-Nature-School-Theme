@@ -189,9 +189,6 @@ var $ = jQuery.noConflict();
 
 
 
-
-
-
     $(function () {                       //run when the DOM is ready
         $(".navbar-toggler").click(function () {  //use a class, since your ID gets mangled
             $("span.line").toggleClass("transformed-x");      //add the class to the clicked element
@@ -211,5 +208,11 @@ var $ = jQuery.noConflict();
 
     });
 
+
+    $('.video-translation-button').click(
+        function (index, element) {
+            $(this).siblings(".translation-text").toggle(); 
+        }
+    );
 
 })(jQuery);

@@ -1,4 +1,4 @@
-<div class="video-translation-wrap alignleft">
+<div class="video-translation-wrap alignleft" style="margin-bottom:50px;">
 
 
     <div class="video-translation">

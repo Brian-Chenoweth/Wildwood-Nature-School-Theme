@@ -18,7 +18,7 @@
 	<div class="contact-us">
 		<?php // include get_template_directory() . '/contact/contact.php'; ?>
 		<h2>Contact Us</h2>
-		<?php echo do_shortcode('[contact-form-7 id="115" title="Contact form 1"]') ?>
+		<?php echo do_shortcode('[contact-form-7 id="704" title="Contact form 1"]') ?>
 	</div>
 </div>
 

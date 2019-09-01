@@ -223,6 +223,9 @@ function get_recent_posts($atts) {
 		echo '<div id="'.$id.'">';
 			foreach( $recent_posts as $recent ){
 
+			setup_postdata( $recent["ID"] );
+			$excerpt = get_the_excerpt($recent["ID"]);
+
 			$ww_author = ww_get_author($recent["ID"]);
 
 			$date = get_the_date( 'd M, Y', $recent["ID"] );
@@ -241,7 +244,7 @@ function get_recent_posts($atts) {
 				<li><a href="' . get_permalink($recent["ID"]) . '"><img src="'. $final_feat .'"></a></li>
 						<li>'.$date.'</li>
 						<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a></li> 
-						<li> '.get_the_excerpt($recent["ID"]).'</li>
+						<li> '.$excerpt.'</li>
 						<li>By: '.get_the_author_meta('display_name', $ww_author).'</li>
 					</ul>';
 				$counter++;

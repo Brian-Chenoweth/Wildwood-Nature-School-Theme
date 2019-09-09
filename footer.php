@@ -40,7 +40,7 @@
 				<p>
 					Wildwood Nature School<br/>
 					Portland, OR 97231<br/>
-					Phone: <a href="tel:406-656-6916">406 656 6916</a><br/>
+					Phone: <a href="tel:408-656-6916">408 656 6916</a><br/>
 					Email: <a href="mailto:nfravel@wildwoodnatureschool.com">nfravel@wildwoodnatureschool.com</a><br/>
 				</p>
 

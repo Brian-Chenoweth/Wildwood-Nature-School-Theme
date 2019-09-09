@@ -40,7 +40,7 @@
 		<div class="header-top">
 			<p>Portland, OR 97231</p>
 			<div class="header-top-left">
-				<p>Phone: <a href="tel:406-656-6916">406 656 6916</a></p>
+				<p>Phone: <a href="tel:408-656-6916">408 656 6916</a></p>
 				<p>Email: <a href="mailto:nfravel@wildwoodnatureschool.com">nfravel@wildwoodnatureschool.com</a></p>
 			</div>
 		</div>
@@ -50,21 +50,6 @@
 		<a href="/" id="logo-home">
 			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/wildwood.png" alt="Wildwood Nature School" />
 		</a>
-		<!-- <nav id="site-navigation" class="main-navigation"> -->
-		<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="menu-burger-menu glyphicon glyphicon-menu-hamburger"></span></button> -->
-		
-<!-- 		
-		<button class="mobile-only hamburger hamburger--collapse menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false">
-			<span class="hamburger-box menu-burger-menu">
-				<span class="hamburger-inner"></span>
-			</span>
-			</button> -->
-			<?php ## wp_nav_menu( array('theme_location' => 'menu-1','menu_id'        => 'primary-menu',) ); ?>
-
-
-
-			
-		<!--</nav> #site-navigation -->
 
 
 	<nav style="width: 100%;" class="navbar navbar-expand-lg navbar-light bg-light">
